@@ -6,7 +6,7 @@
   "projection": {"type": "equalEarth"},
   
   "data": {
-    "url": "https://raw.githubusercontent.com/mingsheng2002/3179/main/ne_50m_admin_0_map_subunits.json",
+    "url": "https://raw.githubusercontent.com/mingsheng2002/3179/main/Week%209%20Homework/js/ne_50m_admin_0_map_subunits.json",
     "format": {"type": "topojson", "feature": "ne_50m_admin_0_map_subunits"}
   },
 
@@ -30,7 +30,7 @@
     },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/2_symbol_map/js/WorldMapWithGraticules.topojson",
+        "url": "https://raw.githubusercontent.com/mingsheng2002/3179/main/Week%209%20Homework/js/ne_110m_graticules_30.json",
         "format": {"type": "topojson", "feature": "ne_110m_graticules_30"}
       },
       "mark": {"type": "geoshape", "fill": null, "stroke": "lightgray"}
@@ -41,7 +41,7 @@
           "lookup": "properties.SOVEREIGNT",
           "from": {
             "data": {
-              "url": "https://raw.githubusercontent.com/mingsheng2002/3179/main/Life%20Expectancy%20Data_2015.csv"
+              "url": "https://raw.githubusercontent.com/mingsheng2002/3179/main/Week%209%20Homework/data/Life%20Expectancy%20Data_2015.csv"
             },
             "key": "Country",
             "fields": ["Adult_mortality"]
@@ -60,7 +60,7 @@
           "type": "quantitative",
           "scale": {
             "type": "threshold",
-            "domain": [1, 100, 200, 350],
+            "domain": [1, 100, 200, 300],
             "range": ["#feedde", "#fdbe85", "#fd8d3c", "#e6550d", "#a63603"]
           }
         },

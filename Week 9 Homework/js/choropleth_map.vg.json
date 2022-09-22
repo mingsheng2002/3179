@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Adult Mortality Rate across Different Countries in Year 2015",
+  "title": "Choropleth of Adult Mortality Rate per Country in Year 2015",
   "width": 800,
   "height": 400,
   "projection": {"type": "equalEarth"},
@@ -49,14 +49,14 @@
         },
         {
           "calculate": "datum.Adult_mortality",
-          "as": "Adult mortality per 1,000 population"
+          "as": "Cases per 1,000 population"
         }
       ],
 
       "mark": {"type": "geoshape"},
       "encoding": {
         "color": {
-          "field": "Adult mortality per 1,000 population",
+          "field": "Cases per 1,000 population",
           "type": "quantitative",
           "scale": {
             "type": "threshold",
@@ -66,7 +66,7 @@
         },
         "tooltip": [
           {"field": "properties.SOVEREIGNT", "type": "nominal", "title": "Country"},
-          {"field": "Adult mortality per 1,000 population", "type": "quantitative"}
+          {"field": "Cases per 1,000 population", "type": "quantitative"}
         ]
       }
     }
